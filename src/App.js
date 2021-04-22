@@ -1,18 +1,20 @@
-import logo from './logo.svg';
-import './TFlagPicker.css';
+import './App.css';
+import TFlagPicker from "./components/TFlagPicker";
 
-function TFlagPicker() {
+function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          tflagpicker
-        </p>
+        <div className={"test-input"}>
+            <TFlagPicker
+                defaultCountry={"TR"}
+                searchPlaceholder={"Search ..."}
+                modalDirection={"ltr"}
+                onChange={(country)=>console.log(country)}
+            />
+        </div>
 
-      </header>
     </div>
   );
 }
 
-export default TFlagPicker;
+export default App;

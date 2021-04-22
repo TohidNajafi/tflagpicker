@@ -1,0 +1,143 @@
+.tfg-button{
+    background: #e2e2e2;
+    width: 120px;
+    max-height: 50px;
+    min-height: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.tfg-button-flag{
+    width: 30px;
+    margin: 4px;
+    border-radius: 4px;
+}
+.tfg-button-symbol{
+    margin: 2px;
+}
+.tfg-button-code{
+    margin: 2px;
+}
+.tfg-modal-body-item{
+    background: #ffffff;
+    border-radius: 5px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    padding: 8px;
+    cursor: pointer;
+    align-items: center;
+}
+.tfg-modal-body-item-flag{
+    width: 30px;
+    margin: 6px;
+    border-radius: 4px;
+}
+.tfg-modal-body-item-dial-code{
+    margin: 8px;
+}
+.tfg-modal-body-item-name{
+    margin: 3px;
+    font-weight: bold;
+    flex-grow: 1;
+    text-align: start;
+}
+
+.tfg-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.tfg-modal-header{
+    background: #f6f6f6;
+    padding: 12px;
+    height: 46px;
+    min-height: 46px;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+.tfg-modal-header-input-place{
+    background: white;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.tfg-modal-header-input{
+    flex-grow: 1;
+    border: none;
+}
+input:focus{
+    outline: none;
+}
+.tfg-modal-header-search-icon{
+    margin-left: 17px;
+    margin-right: 17px;
+    width: 24px;
+}
+.tfg-modal-body{
+    background: #fafafa;
+    flex-grow: 1;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    border-radius: 0 0 5px 5px;
+    padding: 8px 12px 12px 12px;
+}
+
+#my-tfg-modal-body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Modal Content/Box */
+.tfg-modal-content {
+    background-color: #fefefe;
+    border-radius: 5px;
+    width: 80%; /* Could be more or less, depending on screen size */
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    height: 86vh;
+    max-height: 86vh;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+/* Add Animation */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+/* The Close Button */
+.tfg-modal-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.tfg-modal-close:hover,
+.tfg-modal-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
